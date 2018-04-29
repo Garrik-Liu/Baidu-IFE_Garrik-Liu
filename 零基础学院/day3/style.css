@@ -22,3 +22,8 @@ h2 {
     color: aquamarine;
     text-shadow: black 1px 1px 1px;
 }
+
+.item-title {
+    font-weight: bold;
+    color: darkolivegreen
+}
