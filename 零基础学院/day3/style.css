@@ -1,0 +1,24 @@
+* {
+    color: black;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition-duration: 200ms;
+    color: aquamarine;
+}
+
+h1 {
+    color: aqua;
+    text-shadow: black 2px 2px 2px;
+}
+
+h2 {
+    color: aquamarine;
+    text-shadow: black 1px 1px 1px;
+}
