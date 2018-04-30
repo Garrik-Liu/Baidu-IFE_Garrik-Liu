@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition-duration: 200ms;
+    color: aquamarine;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#title-panel {
+    background-color: darkgray;
+    padding: 5px 10px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+}
+
+.info-block-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 10px;
+    border: 1px solid white;
+}
+
+.info-block-content {
+    flex: 1 1 auto;
+    padding-left: 10px;
+    border: 1px solid white;
+}
