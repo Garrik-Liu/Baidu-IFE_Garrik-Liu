@@ -1,0 +1,56 @@
+* {
+    color: black;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition-duration: 200ms;
+    color: aquamarine;
+}
+
+h1 {
+    color: aqua;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+    color: aquamarine;
+    text-shadow: 1px 1px 2px black;
+}
+
+#header,
+.info-block {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px grey;
+    padding: 5px;
+    margin: 10px;
+}
+
+#header:hover,
+.info-block:hover {
+    box-shadow: 2px 2px 4px 2px grey;
+    transition-duration: 150ms;
+}
+
+#header {
+    background-color: bisque;
+}
+
+.info-block {
+    background-color: beige;
+}
+
+.item-title {
+    font-weight: bold;
+    color: darkolivegreen;
+}
+
+.item-content {
+    color: darkseagreen;
+}
