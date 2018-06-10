@@ -144,7 +144,7 @@
     width: 49%;
     flex: 1 1 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 82px;
 }
 
@@ -163,6 +163,7 @@
 
 .mainSection--2__featureGroup__feature__content {
     width: 380px;
+    margin-left: 28px;
 }
 
 .mainSection--2__featureGroup__content__feature__title {
@@ -264,6 +265,7 @@
     align-items: center;
     height: 580px;
     color: #000;
+    border-bottom: 1px solid #ccc;
 }
 
 .mainSection--4__title {
@@ -293,4 +295,310 @@
 .mainSection--4__paraGroup__column__sentence {
     text-align: center;
     color: #797979;
+}
+
+
+/* section 5 */
+
+.mainSection--5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    color: #000;
+    padding-top: 114px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mainSection--5__column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 974px;
+}
+
+.mainSection--5__column:first-of-type {
+    margin-bottom: 78px;
+}
+
+.mainSection--5__column__imgBox {
+    width: 570px;
+    height: 350px;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.mainSection--5__column__img {
+    width: 570px;
+}
+
+.mainSection--5__column__content {
+    width: 314px;
+}
+
+.mainSection--5__column__content__sentence {
+    font-size: 16px;
+    color: #797979;
+    margin-top: 38px;
+}
+
+.mainSection--5__column__content__title {
+    font-weight: normal;
+}
+
+
+/* section 6 */
+
+.mainSection--6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1084px;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+.mainSection--6__title {
+    margin-top: 102px;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 42px;
+}
+
+.mainSection--6__sentence {
+    font-size: 18px;
+    color: #797979;
+    width: 704px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.mainSection--6__photoGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 68px;
+    width: 1000px;
+}
+
+.mainSection--6__photoGroup__cell {
+    width: 470px;
+    height: 340px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin: 0 15 30px;
+    position: relative;
+}
+
+.mainSection--6__photoGroup__cell__photo {
+    width: 100%;
+}
+
+.mainSection--6__photoGroup__cell__cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 400ms;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mainSection--6__photoGroup__cell__cover:hover {
+    opacity: 0.5;
+}
+
+
+/* .mainSection--6__photoGroup__cell__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} */
+
+
+/* section 7 */
+
+.mainSection--7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 700px;
+    color: #000;
+    margin-top: 74px;
+}
+
+.mainSection--7__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 966px;
+    height: 560px;
+    ;
+}
+
+.mainSection--7__form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 468px;
+    height: 100%;
+    padding: 48px;
+}
+
+.mainSection--7__form__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mainSection--7__form__inputText,
+.mainSection--7__form__textArea {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-left: 22px;
+}
+
+.mainSection--7__form__inputText {
+    height: 50px;
+}
+
+.mainSection--7__form__textArea {
+    padding-top: 22px;
+    resize: none;
+}
+
+.mainSection--7__form__submit {
+    height: 50px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.mainSection--7__form__submit:hover {
+    background-color: #333;
+}
+
+.mainSection--7__contact {
+    width: 450px;
+}
+
+.mainSection--7__contact__title {
+    font-size: 42px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.mainSection--7__contact__sentence {
+    margin-bottom: 40px;
+    color: #797979;
+    font-size: 18px;
+}
+
+.mainSection--7__contanct__contactList__cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.mainSection--7__contact__sentence__contactList__icon {
+    margin-right: 15px;
+}
+
+.mainSection--7__contanct__contactList__cell>a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.mainSection--7__contanct__contactList__cell>a:hover {
+    color: #797979;
+}
+
+
+/* footer */
+
+.mainFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 360px;
+    background-color: #000;
+    padding: 86px 212px 0px;
+}
+
+.mainFooter__linkGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 650px;
+}
+
+.mainFooter__linkGroup__column {}
+
+.mainFooter__linkGroup__column__title {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.mainFooter__linkGroup__column__list {
+    list-style: none;
+}
+
+.mainFooter__linkGroup__column__list a {
+    text-decoration: none;
+    color: #494949;
+    font-size: 14px;
+    transition: color 400ms;
+}
+
+.mainFooter__linkGroup__column__list__item {
+    margin-top: 20px;
+}
+
+.mainFooter__linkGroup__column__list a:hover {
+    color: #eee;
+}
+
+.mainFooter__socialLink {
+    width: 276px;
+}
+
+.mainFooter__socialLink__title {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.mainFooter__socialLink__sentence {
+    color: #797979;
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 24px;
+}
+
+.mainFooter__socialLink__linkGroup>a {
+    margin-right: 26px;
+}
+
+.mainFooter__socialLink__linkGroup>a>img {
+    height: 16px;
 }
