@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Day12-Day15</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main_nav.css">
+    <link rel="stylesheet" href="./main_menu.css">
+    <link rel="stylesheet" href="./main_messages.css">
 </head>
 
 <body>
@@ -35,13 +37,239 @@
                 </a>
             </div>
         </div>
+
         <div class="main_menu">
-
+            <div class="main_menu_listGroup">
+                <div class="main_menu_listBox">
+                    <div class="main_menu_listBox_titleBar">
+                        <h2 class="main_menu_listBox_title">MENU</h2>
+                        <a class="main_menu_listBox_settingLink" href="#">
+                            <img class="main_menu_listBox_settingIcon" src="imgs/main_menu/Settings.png" alt="icon">
+                        </a>
+                    </div>
+                    <ul class="main_menu_listBox_list">
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Overview</a></li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Sales</a></li>
+                        <li class="main_menu_listBox_item">
+                            <a href="#" class="main_menu_listBox_itemLink">Your Staff</a>
+                            <div class="main_menu_listBox_itemPop">54</div>
+                        </li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Analytics & Targeting</a></li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">What's New</a></li>
+                    </ul>
+                </div>
+                <div class="main_menu_listBox">
+                    <div class="main_menu_listBox_titleBar">
+                        <h2 class="main_menu_listBox_title">YOUR PRODUCTS</h2>
+                        <a class="main_menu_listBox_settingLink" href="#">
+                            <img class="main_menu_listBox_settingIcon" src="imgs/main_menu/Settings.png" alt="icon">
+                        </a>
+                    </div>
+                    <ul class="main_menu_listBox_list">
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Books</a></li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Tutorials</a></li>
+                        <li class="main_menu_listBox_item">
+                            <a href="#" class="main_menu_listBox_itemLink">Stocks</a>
+                        </li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Infographics</a></li>
+                    </ul>
+                </div>
+                <div class="main_menu_listBox">
+                    <div class="main_menu_listBox_titleBar">
+                        <h2 class="main_menu_listBox_title">DASHBOARD</h2>
+                        <a class="main_menu_listBox_settingLink" href="#">
+                            <img class="main_menu_listBox_settingIcon" src="imgs/main_menu/Settings.png" alt="icon">
+                        </a>
+                    </div>
+                    <ul class="main_menu_listBox_list">
+                        <li class="main_menu_listBox_item">
+                            <a href="#" class="main_menu_listBox_itemLink">Message</a>
+                            <div class="main_menu_listBox_itemPop">21</div>
+                        </li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Connections</a></li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">Integrations</a></li>
+                        <li class="main_menu_listBox_item">
+                            <a href="#" class="main_menu_listBox_itemLink">Account Setting</a>
+                            <div class="main_menu_listBox_itemAlert">!</div>
+                        </li>
+                        <li class="main_menu_listBox_item"><a href="#" class="main_menu_listBox_itemLink">App Setting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_menu_monthGoalBar">
+                <div class="main_menu_monthGoalBar_wordsGroup">
+                    <span class="main_menu_monthGoalBar_words">Monthly Goal</span>
+                    <span class="main_menu_monthGoalBar_progressWords">$500/$3000</span>
+                </div>
+                <div class="main_menu_monthGoalBar_progressBar">
+                    <div class="main_menu_monthGoalBar_progress"></div>
+                </div>
+            </div>
         </div>
-        <div class="main_message">
 
-        </div>
-        <div class="main_message">
+        <div class="main_messages">
+            <div class="main_messages_titleBar">
+                <h2 class="main_messages_title">Messages</h2>
+                <div class="main_messages_avatorGroup">
+                    <a href="#" class="main_messages_avatorLink">
+                        <img src="./imgs/main_messages/avator.png" alt="avator">
+                    </a>
+                    <div class="main_messages_avatorGroup_nameGroup">
+                        <p class="main_messages_avatorGroup_name">Jordan J.</p>
+                        <p class="main_messages_avatorGroup_job">Administrator</p>
+                    </div>
+                    <a href="#" class="main_messages_avatorGroup_dropdown">
+                        <img src="./imgs/main_messages/dropdown.png" alt="dropdown">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main_messages_content">
+                <div class="main_messages_left">
+                    <div class="main_messages_searchBar">
+                        <div class="main_messages_searchContainer">
+                            <input class="main_messages_searchInput" type="text" placeholder="Search">
+                            <a href="#">
+                                <img class="main_messages_searchIcon" src="./imgs/main_messages/Search icon.png" alt="icon">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="main_messages_contactList">
+                        <div class="main_messages_contactItemContainer">
+                            <div class="main_messages_contactItemBlueBar active"></div>
+                            <div class="main_messages_contactItem">
+                                <div class="main_messages_contactItem_nameBar">
+                                    <div class="main_messages_contactItem_photoName">
+                                        <a href="#" class="main_messages_contactItem_avatorContainer">
+                                            <img class="main_messages_contactItem_avatorIcon" src="./imgs/main_messages/Face.png" alt="avator">
+                                        </a>
+                                        <div class="main_messages_contactItem_nameGroup">
+                                            <p class="main_messages_contactItem_name">
+                                                <span class="main_messages_contactItem_nameStatus"></span> <span>Bessie Berry</span>
+                                            </p>
+                                            <p class="main_messages_contactItem_job">Twitter</p>
+                                        </div>
+                                    </div>
+                                    <div class="main_messages_contactItem_lastTime">3m</div>
+                                </div>
+                                <p class="main_messages_contactItem_message">
+                                    I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main_messages_contactItemContainer">
+                            <div class="main_messages_contactItemBlueBar showOff"></div>
+                            <div class="main_messages_contactItem">
+                                <div class="main_messages_contactItem_nameBar">
+                                    <div class="main_messages_contactItem_photoName">
+                                        <a href="#" class="main_messages_contactItem_avatorContainer">
+                                            <img class="main_messages_contactItem_avatorIcon" src="./imgs/main_messages/Face.png" alt="avator">
+                                        </a>
+                                        <div class="main_messages_contactItem_nameGroup">
+                                            <p class="main_messages_contactItem_name-off">
+                                                <span>Bessie Berry</span>
+                                            </p>
+                                            <p class="main_messages_contactItem_job">Twitter</p>
+                                        </div>
+                                    </div>
+                                    <div class="main_messages_contactItem_lastTime">3m</div>
+                                </div>
+                                <p class="main_messages_contactItem_message">
+                                    I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main_messages_contactItemContainer">
+                            <div class="main_messages_contactItemBlueBar showOff"></div>
+                            <div class="main_messages_contactItem">
+                                <div class="main_messages_contactItem_nameBar">
+                                    <div class="main_messages_contactItem_photoName">
+                                        <a href="#" class="main_messages_contactItem_avatorContainer">
+                                            <img class="main_messages_contactItem_avatorIcon" src="./imgs/main_messages/Face.png" alt="avator">
+                                        </a>
+                                        <div class="main_messages_contactItem_nameGroup">
+                                            <p class="main_messages_contactItem_name-off">
+                                                <span>Bessie Berry</span>
+                                            </p>
+                                            <p class="main_messages_contactItem_job">Twitter</p>
+                                        </div>
+                                    </div>
+                                    <div class="main_messages_contactItem_lastTime">3m</div>
+                                </div>
+                                <p class="main_messages_contactItem_message">
+                                    I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main_messages_contactItemContainer">
+                            <div class="main_messages_contactItemBlueBar showOff"></div>
+                            <div class="main_messages_contactItem">
+                                <div class="main_messages_contactItem_nameBar">
+                                    <div class="main_messages_contactItem_photoName">
+                                        <a href="#" class="main_messages_contactItem_avatorContainer">
+                                            <img class="main_messages_contactItem_avatorIcon" src="./imgs/main_messages/Face.png" alt="avator">
+                                        </a>
+                                        <div class="main_messages_contactItem_nameGroup">
+                                            <p class="main_messages_contactItem_name-off">
+                                                <span>Bessie Berry</span>
+                                            </p>
+                                            <p class="main_messages_contactItem_job">Twitter</p>
+                                        </div>
+                                    </div>
+                                    <div class="main_messages_contactItem_lastTime">3m</div>
+                                </div>
+                                <p class="main_messages_contactItem_message">
+                                    I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's relatively quick, and stable...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_messages_right">
+                    <div class="main_messages_infoBar">
+                        <div class="main_messages_infoBar_nameBar">
+                            <span class="main_messages_infoBar_name">Bessue Berry</span>
+                            <span class="main_messages_infoBar_nameStatus"></span>
+                        </div>
+                        <div class="main_messages_infoBar_controlBar">
+                            <ul class="main_messages_infoBar_cntrolList">
+                                <li class="main_messages_infoBar_cntrolItem">
+                                    <a href="#">
+                                        <img src="./imgs/main_messages/User icon.png" alt="icon">
+                                    </a>
+                                </li>
+                                <li class="main_messages_infoBar_cntrolItem">
+                                    <a href="#">
+                                        <img src="./imgs/main_messages/Upload icon.png" alt="icon">
+                                    </a>
+                                </li>
+                                <li class="main_messages_infoBar_cntrolItem">
+                                    <a href="#">
+                                        <img src="./imgs/main_messages/Trash icon.png" alt="icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="main_messages_infoBar_divide"></div>
+                            <div class="main_messages_infoBar_rightLeft">
+                                <span class="main_messages_infoBar_rightLeftWord">1 of 28</span>
+                                <ul class="main_messages_infoBar_rightLeftList">
+                                    <li class="main_messages_infoBar_rightLeftItem">
+                                        <a href="#">
+                                            <img src="./imgs/main_messages/Arrow left.png" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li class="main_messages_infoBar_rightLeftItem">
+                                        <a href="#">
+                                            <img src="./imgs/main_messages/Arrow right.png" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

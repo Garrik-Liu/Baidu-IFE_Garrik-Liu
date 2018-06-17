@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.showOff {
+    display: none;
+}
+
 .main_container {
     display: grid;
     grid-template-areas: "nav menu message";
@@ -17,6 +21,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: #1d2531;
+    padding: 20px 0;
+    overflow-y: auto;
 }
 
 .main_nav_iconGroup {
@@ -32,6 +38,10 @@
     transition: box-shadow 400ms;
 }
 
+.main_nav_iconContainer:first-of-type {
+    margin-top: 0;
+}
+
 .main_nav_iconContainer:hover {
     box-shadow: 0px 0px 4px 2px #666;
 }
@@ -40,5 +50,5 @@
     display: flex;
     justify-content: space-between;
     width: 50px;
-    margin-bottom: 20px;
+    margin: 20px 0 0;
 }
