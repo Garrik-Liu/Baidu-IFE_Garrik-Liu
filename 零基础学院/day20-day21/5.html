@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第五个</title>
+    <style>
+        #spiritDiv {
+            background-image: url('./erik_ce204002.jpg');
+            width: 480px;
+            height: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spiritDiv">
+
+    </div>
+    <script>
+        var spiritDiv = document.getElementById('spiritDiv');
+        spiritDiv.style.backgroundPositionY = "0px";
+        var dir = "down";
+        var interval = setInterval(function() {
+            if (dir == "down") {
+                spiritDiv.style.backgroundPositionY = Number(spiritDiv.style.backgroundPositionY.slice(0, -2)) - 480 + "px";
+                if (Number(spiritDiv.style.backgroundPositionY.slice(0, -2)) <= -7680) {
+                    dir = "up";
+                }
+            } else if (dir == 'up') {
+                spiritDiv.style.backgroundPositionY = Number(spiritDiv.style.backgroundPositionY.slice(0, -2)) + 480 + "px";
+                if (Number(spiritDiv.style.backgroundPositionY.slice(0, -2)) >= 0) {
+                    dir = "down";
+                }
+            }
+        }, 55);
+    </script>
+</body>
+
+</html>

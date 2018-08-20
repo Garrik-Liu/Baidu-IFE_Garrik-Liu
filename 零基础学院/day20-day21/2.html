@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>第二个</title>
+    <style>
+        select {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input id="school" name="status" type="radio">
+        School
+    </label>
+    <label>
+        <input id="company" name="status" type="radio">
+        Company
+    </label>
+
+    <select id="school-select">        
+        <option>北京邮电大学</option>
+        <option>黑龙江大学</option>
+        <option>华中科技大学</option>
+    </select>
+
+    <select id="company-select">        
+        <option>百度</option>
+        <option>爱奇艺</option>        
+    </select>
+</body>
+
+<script>
+    var sInput = document.getElementById('school');
+    var cInput = document.getElementById('company');
+
+    var sSelect = document.getElementById('school-select');
+    var cSelect = document.getElementById('company-select');
+
+    sInput.onclick = function() {
+        sSelect.style.display = 'block';
+        cSelect.style.display = 'none';
+    }
+
+    cInput.onclick = function() {
+        sSelect.style.display = 'none';
+        cSelect.style.display = 'block';
+    }
+</script>
+
+</html>

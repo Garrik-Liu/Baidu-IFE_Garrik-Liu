@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第四个</title>
+</head>
+
+<body>
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn">淡出</button>
+</body>
+
+<script>
+    var fadeO = document.getElementById('fade-obj');
+    var fadeB = document.getElementById('fade-btn');
+
+    var dir = "out";
+    fadeB.onclick = function() {
+        if (dir == "in") {
+            fadeO.style.opacity = "0";
+            var fadeIn = setInterval(function() {
+                fadeB.disabled = true;
+                var result = fade(fadeO, 'in', 0.02);
+                if (!result) {
+                    clearInterval(fadeIn);
+                    fadeB.disabled = false;
+                    dir = "out"
+                    fadeB.innerText = "淡出";
+                }
+            }, 13);
+        } else if (dir == "out") {
+            fadeO.style.opacity = "1";
+            var fadeOut = setInterval(function() {
+                fadeB.disabled = true;
+                var result = fade(fadeO, 'out', 0.01);
+                if (!result) {
+                    clearInterval(fadeOut);
+                    fadeB.disabled = false;
+                    dir = "in";
+                    fadeB.innerText = "淡入";
+                }
+            }, 13);
+        }
+    }
+
+    function fade(object, direction, delta) {
+        if (direction == 'in' && object.style.opacity <= 1) {
+            object.style.opacity = Number(object.style.opacity) + delta;
+            return true;
+        } else if (direction == 'out' && object.style.opacity >= 0) {
+            object.style.opacity = Number(object.style.opacity) - delta;
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+
+</html>
